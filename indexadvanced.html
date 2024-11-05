@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        1.Inventory Management for Expiry Dates
+        let  currentDay=parseInt(prompt("enter a integer that represents the day of the year"))
+        let expiryDay=parseInt(prompt("enter a integer that represents the day of the year"))
+        const n=365
+        if(((expiryDay && currentDay)<=n)&&  (expiryDay < currentDay) ){
+            console.log("the item is expired")
+        }
+        else if( ((expiryDay && currentDay)<=n)&&  expiryDay >= currentDay){
+            console.log("not expired")
+        }
+        else{
+            console.log("enter a valid day")
+        }
+
+        //         let currentDateInput = prompt("Enter the current date (month-year, e.g., 5-2024):");// number methods using
+        // let expiryDateInput = prompt("Enter the expiry date (month-year, e.g., 8-2025):");
+
+        // // Split the input into month and year
+        // let [currentMonth, currentYear] = currentDateInput.split('-').map(Number);
+        // let [expiryMonth, expiryYear] = expiryDateInput.split('-').map(Number);
+
+        // // Check if the input dates are valid
+        // if (
+        //     (currentMonth >= 1 && currentMonth <= 12 && currentYear > 0) &&
+        //     (expiryMonth >= 1 && expiryMonth <= 12 && expiryYear > 0)
+        // ) {
+        //     // Compare years first
+        //     if (expiryYear < currentYear || (expiryYear === currentYear && expiryMonth < currentMonth)) {
+        //         console.log("The item is expired.");
+        //     } else {
+        //         console.log("Not expired.");
+        //     }
+        // } else {
+        //     console.log("Enter a valid date in the format month-year (e.g., 5-2024).");
+        // }
+
+
+
+        2.Even-Odd Alternating Pattern Checker
+        let array=[2,3,4,5]
+        let pattern=true
+        for(i=0;i<array.length;i++){
+            if(i%2===0){
+               if( array[i]%2===0){
+               }
+               else{
+                pattern=false
+               }
+            }
+            else{
+              if(array[i]%2!==0){
+                  }
+                  else{
+                    pattern=false
+                  }
+            }
+        }
+        if(pattern){
+            console.log("pattern followed")
+        }
+        else{
+            console.log("pattern broken")
+        }
+
+
+        3.Bank Transaction Validator
+        let balance=parseInt(prompt("enter the balance"))
+        let withdrawalAmount=parseInt(prompt("enter the withdrawalAmount"))
+        if(balance >= withdrawalAmount){
+            console.log("allow transaction")
+        }
+        else if(balance < withdrawalAmount){c
+            console.log("reject the transaction")
+        }
+
+        //4.Vowel-Consonant Alternation Checker
+let string = prompt("Enter the string").toLowerCase();
+let pattern = true;
+
+for (let i = 0; i < string.length; i++) {
+    if (i % 2 === 0) { // Even index
+        if (string[i] !== "a" && string[i] !== "e" && string[i] !== "i" && string[i] !== "o" && string[i] !== "u") {
+            pattern = false;
+        }
+    } else { // Odd index
+        if (string[i] === "a" || string[i] === "e" || string[i] === "i" || string[i] === "o" || string[i] === "u") {
+            pattern = false;
+        }
+    }
+}
+
+if (pattern) {
+    console.log("Pattern followed");
+} else {
+    console.log("Pattern broken");
+}
+
+
+
+        5.Digit Sum Parity Checker
+        let number=parseInt(prompt("enter the number"))
+        let sum=0
+        while(number>0){
+            let remainder=number%10
+            sum+=remainder
+            number=Math.floor(number/10)
+        }
+        if(sum%2==0){
+            console.log("Sum is Even")
+        }
+        else{
+            console.log("Sum is odd")
+        }
+
+
+
+    </script>
+</body>
+
+</html>

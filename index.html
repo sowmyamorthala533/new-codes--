@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      1.Product Discount    easy questions
+      let price=parseInt(prompt("enter the price of a product"))  
+      if(price>500){
+        let amount=price-(price*0.2)
+        console.log(amount)
+      }
+      else if(price>200 && price<=500){
+        amount=price-(price*0.1)
+        console.log(amount)
+      }
+      else{
+        console.log("No Discount")
+      }
+
+//    2. Temperature Alert System
+   let Temperature=parseInt(prompt("enter the temperature in degrees"))  
+      if(Temperature>40){
+        console.log("Extreme Hot")
+      }
+      else if(Temperature>20 && Temperature<=40){
+        console.log("Moderate")
+      }
+      else if(Temperature<20){
+        console.log("Cold")
+      }
+
+
+3.Grades Based on Marks
+let Marks=parseInt(prompt("enter the Marks secured"))  
+if(Marks>=90){
+    console.log("A+")
+}
+else if(Marks>=80 && Marks<90){
+    console.log("A")
+}
+else if(Marks>=70 && Marks<80){
+    console.log("B")
+}
+else if(Marks<70){
+    console.log("C")
+}
+
+     or by using switch case 
+let Marks=parseInt(prompt("enter the Marks secured"))  
+switch(true){
+    case (Marks>=90):
+        console.log("A+")
+        break
+    case (Marks>=80 && Marks<90):
+        console.log("A")
+        break
+    case (Marks>=70 && Marks<80):
+       console.log("B")
+       break
+    case (Marks<70):
+       console.log("B")
+       break
+    default:
+        console.log("enter valid marks")
+}
+
+
+
+4.Library Late Fees
+let Latedays=parseInt(prompt("enter the no of days"))
+let fine
+if(Latedays>=1 && Latedays<=5){
+     fine=Latedays*2
+    console.log(fine)
+}
+else if(Latedays>=6 && Latedays<=10){
+      fine=Latedays*3
+    console.log(fine)
+}
+else if(Latedays>10){
+     fine=Latedays*10
+    console.log(fine)
+}
+
+5.Food Preference Survey
+let favfood=prompt("enter your favfood in Pizza ,Pasta,Burger")
+if(favfood=="Pizza"){
+    console.log("Pizza lover!")
+}
+else if(favfood=="Pasta"){
+    console.log("Pasta lover!")
+}
+else if(favfood=="Burger"){
+    console.log("Burger lover!")
+}
+else{
+    console.log("Invalid choice")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

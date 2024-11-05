@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+    1.Loan Eligibility Checker
+        let age=parseInt(prompt("enter the age"))
+        let income =parseFloat(prompt("enter the income"))
+        let Criminalrecord=prompt("enter the string  value true of false")
+        if((age>20 && age<61) && income>20000 && Criminalrecord=="false"){
+            console.log("Eligible for Loan")
+        }
+        else{
+            console.log("Not Eligible")
+        }
+ 2. Sales Target Achievement
+ let salesTarget=parseInt(prompt("enter the sales target in percentage"))
+ let monthlySalary=parseInt(prompt("enter the monthly salary"))
+ if(salesTarget>120){
+    let bonus=monthlySalary*0.2
+    console.log(bonus)
+ }
+ else if(salesTarget>=100 && salesTarget<=120){
+    bonus=monthlySalary*0.1
+    console.log(bonus)
+ }
+ else if(salesTarget<100){
+    console.log("no bonus")
+ }
+ else{
+    console.log("enter crt target")
+ }
+
+3.School Attendance Checker
+let totalClasses=parseInt(prompt("enter the total no of classes "))
+let classesAttended=parseInt(prompt("enter the total no of classesatteneded "))
+if((totalClasses>0)&& (classesAttended/totalClasses)>0.75){
+    console.log("Eligible")
+}
+else{
+    console.log("Not Eligible")
+}
+
+4.Online Shop Loyalty Points
+let purchaseAmount =parseInt(prompt("enter the purchased amount in dollars"))
+if( purchaseAmount<100){
+ let  points= (Math.floor(purchaseAmount/10))*1
+ console.log(points)
+}
+else if(purchaseAmount>100){
+    let  points= (Math.floor(purchaseAmount/10))*2
+    console.log(points)
+}
+
+5.Counting Occurrences of a Character
+let string=prompt("enter the string")
+let count=0
+for(i=0;i<string.length;i++){
+    if(string[i].includes("e"))
+    count++
+    else{
+        console.log("enter crt string")
+    }
+}
+console.log(count)
+
+we also have other method here that is using split ethod method ,as this is a array method it splits into array ,when we split a word it 
+splits when the word occured but it takes the substring only ex
+let text = prompt("Enter a string:");
+let count = text.split('e').length - 1;
+console.log(count);
+["", "xc", "ll", "nc", ""] when we split
+Therefore, .split('e') creates an empty string "" as the first element in the resulting array to represent the "substring" before the first 'e'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
